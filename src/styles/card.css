@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html body{
+    height: 100%;
+    width: 100%;
+    background-color: #e7daf7;
+    color: #260e5a;
+}
+ #root {
+    
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Mono', monospace;
+}
+
+.header {
+    padding: 25px 15px;
+    margin: 0 25%;
+    display: flex;
+    align-items: center;
+    column-gap: 250px;
+    margin-bottom: 50px;
+}
+
+.header-title {
+    color: #260e5a;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.search-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.search-form {
+    height: 560px;
+    margin: 10px;
+    display: block;
+    position: relative;
+}
+
+.search-form::before {
+    content: "";
+    background: linear-gradient(130deg, #7515f5, #260e5a 41.07%, #7bffff 76.05%);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.search-form:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 2;
+    border-radius: 8px;
+}
+
+.search-form form {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.loader-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    height: 450px;
+    aspect-ratio: 1;
+    rotate: -15deg;
+    margin: auto;
+}
+
+.uberall-logo,
+.orbit,
+.moon {
+    position: absolute;
+    transform-style: preserve-3d;
+    inset: 0;
+    height: calc(var(--size) * 1%);
+    margin: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.uberall-logo {
+    --size: 25;
+    background-color:#e7daf7 ;
+    border: 12px solid #7515f5;
+    border-radius: 50%;
+}
+
+.uberall-logo::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 40px;
+    background-color: #7515f5;
+    bottom: -33px;
+    transform: rotate(40deg);
+    left: 69px;
+}
+
+.uberall-logo::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 50px;
+    background-color: #7515f5;
+    bottom: -38px;
+    transform: rotate(305deg);
+    left: 41px;
+}
+
+.orbit {
+    --size: 36;
+    --duration: 3s;
+    box-shadow: 0 0 0 3cqmin #7515f5;
+    animation: orbit calc(var(--duration)) linear infinite;
+    rotate: 1 0 0 68deg;
+}
+
+.moon {
+    --size: 25;
+    height: calc(var(--size) * 1%);
+    margin-left: calc(var(--size) * -1%);
+    background: #7515f5;
+    animation: moon calc(var(--duration)) linear infinite;
+    rotate: 1 0 0 90deg;
+}
+
+.filling {
+    position: absolute;
+    height: 25px;
+    width: 15px;
+    background: #7515f5;
+    bottom: -27px;
+    left: 56px;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+@keyframes moon {
+    to {
+        transform: rotate3d(0, 1, 0, -360deg);
+    }
+}
+
+.table_component {
+    overflow-y: auto;
+    max-height: 500px;
+    width: 80%;
+    margin: 25px auto;
+}
+
+.table_component table {
+    border: 1px solid transparent;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid transparent;
+    background-color: #7515f5;
+    color: #fff;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+.table_component tr:nth-child(even) td {
+    background-color: #ffffff;
+    color: #7515f5;
+}
+
+.table_component tr:nth-child(odd) td {
+    background-color: #e7daf7;
+    color: #7515f5;
+}
+
+.directory-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+
+}
+
+.error-message {
+    color: #d60600;
+}
+
+ul li {
+    list-style: none;
+}
+li:nth-child(odd) {
+    color: #e7daf7;
+    background-color: #7515f5;
+}
+
+.info-container-managed {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.search-history-container {
+    width: 60%;
+    max-height: 140px;
+    margin: 20px auto;
+    overflow-y: scroll;
+}
+.search-history-title{
+    width: 60%;
+    margin: 20px auto;
+}
+.search-history-entry {
+    padding: 10px 25px;
+    
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+    
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #7515f5;
+}
+.submit {
+    border-radius: 12px;
+    color: #e7daf7;
+    background-color: #7515f5;
+    border: 1px solid #7515f5;
+    padding: 10px 25px;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+1. reverse engineer the example (again) (done)
+ 1.1 -> after carefully analyzing each of the requests of the 
+ GET API the only difference one of the requests alreadyManaged = true
+ so lets say of one of the requests' alreadyManaged = true, show the managed UI else show the chart UI
+ that was the case confirmed by David 4/11
+2. create the form (done)
+3. create the loader (done)
+4. handle not managed table (done)
+    4.1 chart
+5. handle managed table
+    5.1 info summary besides table
+6. search history (done)
+7. handle UI/COLOR PALETTE/HEADER/FOOTER (done)
+8. shortUrl and CMS

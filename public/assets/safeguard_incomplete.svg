@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="31px" viewBox="0 0 26 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>safeguard-incomplete</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="slices" sketch:type="MSArtboardGroup" transform="translate(-44.000000, -137.000000)" fill="#A8B6C3">
+            <path d="M70,151 L70,142 L57,137 L44,142 L44,151 C44,158.667267 49.5058824,166.127364 57,168 C64.4941176,166.127364 70,158.667267 70,151 Z M52.3866877,160.449398 L61.7220529,160.449398 C62.1517012,160.449398 62.5,160.124939 62.5,159.724699 C62.5,159.324459 62.1517012,159 61.7220529,159 L52.3866877,159 C51.9570394,159 51.6087406,159.324459 51.6087406,159.724699 C51.6087406,160.124939 51.9570394,160.449398 52.3866877,160.449398 Z M59.3859783,144.401071 C59.7013549,143.950667 60.3201918,143.839839 60.7838447,144.164492 L62.4067997,145.300897 C62.8634434,145.620643 62.9784783,146.244237 62.6625865,146.695377 L56.9242855,154.89052 L53.6476773,152.596214 L59.3859783,144.401071 Z M53.0170458,153.470602 L53.0027799,157.038144 L56.3682475,155.778927 L53.0170458,153.470602 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
